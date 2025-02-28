@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML5 FORM » Alice</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10 mb-3 offset-md-1">
+            <div class="card border-grey border border-2 m-3"> 
+                
+                <div class="card card-outline-secondary border-end-0 border-start-0 border-top-0">
+                    <div class="card-header p-3">
+                        <h3 class="mb-0">Payment form example</h3>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-danger" id="error-msg">Some fields are missing.</div>
+                </div>
+                
+                <form method="post" action="#">
+                    <div class="row mt-4 ps-3 pe-3">
+                        <div class="col-sm-5 pb-3">
+                            <label for="exampleAccount">Card #</label>
+                            <input class="form-control" id="exampleAccount" type="text" placeholder="XXXX XXXX XXXX XXXX">
+                        </div>
+                        <div class="col-sm-3 pb-3">
+                            <label for="exampleAccount">CVC #</label>
+                            <input class="form-control" id="exampleCtrl" type="text" placeholder="0000">
+                        </div>
+                        <div class="col-sm-4 pb-3">
+                            <label for="exampleAmount">Amount</label>
+                            <div class="input-group">
+                                <span class="input-group-text">€</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4 ps-3 pe-3"pe-3 >
+                        <div class="col-md-6">
+                            <label for="FirstName">First name</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="exampleLastName">Last name</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4 ps-3 pe-3"pe-3 >
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-control custom-select">
+                                <option selected>Pick a state...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Postal code</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="row mt-4 ps-3 pe-3">
+                        <div class="col-md-6 pb-3">
+                            <p for="exampleAccount">We accept:</p>
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" checked id="blue" name="options" type="radio">
+                                    <i class="fab fa-cc-mastercard"></i>
+                                </label> 
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="red" name="options" type="radio">
+                                    <i class="fab fa-cc-visa"></i>
+                                </label> 
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="green" name="options" type="radio">
+                                    <i class="fab fa-cc-diners-club"></i>
+                                </label> 
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="yellow" name="options" type="radio">
+                                    <i class="fab fa-cc-amex"></i>
+                                </label> 
+                            </div>
+                        </div>
+                        <div class="col-md-6 pb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="add any notes here"></textarea>
+                        </div>
+                    </div>
+                    
+                </form>
+                <div class="card-footer">
+                    <div class="float-right text-end">
+                        <button class="btn btn-secondary" type="reset">Cancel</button>
+                        <button class="btn btn-primary" id="sendForm">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
